@@ -31,14 +31,21 @@
     line-height: 20px; 
     letter-spacing: 1.667px;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.narrow-black{
+    color: var(--Font-Color, #000);
+    font-family: PT Sans Narrow;
+    font-size: 16.667px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.333px;
 }
 header, footer{
     background-color: #E9EBFE;
 }
 header{
     position: relative;
-}
-.container{
     padding: 140px 0;
 }
 header::after{
@@ -76,5 +83,32 @@ header::after{
 .btn.btn-itd:hover{
     background-color: #fb9f30;
 }
+.contact{
+    margin-bottom: 0;
+}
+section{
+    margin-top: 75px;
+    /* padding: 0 80px; */
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+    gap: 83px;
+}
+.skill-list{
+    display: flex;
+    gap: 100px;
+}
+.interest-block{
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) { 
+    section {
+        padding: 0 110px;
+    }
+}
+
 
 
