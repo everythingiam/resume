@@ -109,6 +109,15 @@ section{
         padding: 0 110px;
     }
 }
+.works{
+    color: var(--corange);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 
 
 
