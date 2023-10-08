@@ -152,7 +152,7 @@ footer::before{
     max-width: 150px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
 .footer, footer{
     padding: 100px 0;
