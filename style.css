@@ -14,6 +14,7 @@
 	font-family: 'PT Sans Narrow'; 
 	src: url(fonts/PT_Sans-Narrow-Web-Regular.ttf); 
 }
+
 .playfair{
     color: var(--Font-Color, #000);
     font-family: Playfair Display;
@@ -59,18 +60,21 @@ header::after{
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 .my-photo{
-    max-width: 291px;
     height: auto;
     border-radius: 50%;
-    margin-left: 90px;
+    margin-right: 100px;
+}
+.photo-cont{
+    display: flex;
+    justify-content: flex-end;
 }
 .my-name{
     font-size: 105px;
     margin: 0;
     line-height: 93px; 
     margin-bottom: 0;
-
 }
+
 .btn.btn-itd{
     margin-top: 33px;
     display: block;
@@ -104,7 +108,12 @@ section{
 .interest-block{
     margin-bottom: 30px;
 }
-
+.qual-and-port{
+    display: flex;
+    flex-direction: column;
+    gap: 83px;
+    margin-top: -30px;
+}
 @media (min-width: 768px) { 
     section {
         padding: 0 110px;
@@ -140,10 +149,12 @@ footer::before{
     position: absolute;
     top: 0;
     background-color: white;
-    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    transform: rotate(180deg);
 }
 .connection{
     font-size: 55px;
+    margin-top: 15px;
 }
 .mail{
     color: var(--cblue);
@@ -156,4 +167,70 @@ footer::before{
 }
 .footer, footer{
     padding: 100px 0;
+    margin-top:50px;
+}
+@media (max-width: 1200px) {
+    .my-name{
+        font-size: 71px;
+        line-height: 63px;
+    }
+    .my-photo{
+        max-width: 220px;
+        margin-right: 60px;
+    }
+}
+@media (max-width: 992px){
+    .my-photo{
+        margin-right: 0;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 992px) and (min-width: 576px){
+    .qual-and-port{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .my-name{
+        font-size: 71px;
+        line-height: 63px;
+    }
+    .connection{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .mail{
+        font-size: 23px;
+    }
+    .icons{
+        max-width: 200px;
+    }
+    .left-section{
+        gap: 50px;
+    }
+    .rectangle{
+        width: 60px;
+        height: 8px;
+        background-color: var(--corange);
+        margin: 30px 0;
+    }
+    .qual-and-port{
+        gap: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .my-name{
+        font-size: 50px;
+        line-height: 41px;
+    }
+    .connection{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .mail{
+        font-size: 19px;
+    }
 }
